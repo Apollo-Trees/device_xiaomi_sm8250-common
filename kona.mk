@@ -229,6 +229,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
+# MiSound without Dolby (By Default - Enabled)
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.audio.misound.disable=enable \
+    ro.vendor.audio.misound.bluetooth.enable=true
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
